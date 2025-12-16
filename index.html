@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Gastrobyte</title>
+        <link rel="shortcut icon" href="FotosBootstrap/frigideira.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="FotosBootstrap/logo.svg" alt="Gastrobyte" width="90" height="80">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ms-auto align-items-center gap-5">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="receitas.html"> Receitas </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="dicas.html">Dicas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="about.html">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <a class="navbar-brand" href="#" aria-label="Pesquiçar">
+                                <img src="FotosBootstrap/Iconlupasvg.svg" alt="lupa de pesquisa" width="30" height="40">
+                            </a>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container px-5">
+            <div class="hero d-flex align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-black">
+                            <h1 class="display-4 fw-bold">Muito mais do que receitas!</h1>
+                            <p class="lead">
+                            A cozinha é um palco aberto a todos os que querem aprender. Por isso reunimos uma coleção de sabores, com diferentes dificuldades e culturas. Cada receita vai ser um convite para criar, experimentar e surpreender.
+                            </p>
+                            <a href="about.html" class="btn btn-dark btn-lg mt-3 boton-shadow">Saber mais</a>
+
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <img src="FotosBootstrap/Slidercozinheiro-removebg-preview.png" class="img-fluid" style="max-width: 500px;" alt="Disenho de chef">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="py-5 text-center">
+                <div class="container">
+                    <h2 class="display-5 fw-bold">Cria o teu propio menu</h2>
+                </div>
+            </section>
+
+            <section class="pb-5">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="FotosBootstrap/ratatouille2.jpg" class="card-img-top" alt="Ratatouille vegetariana em um prato branco com manjericão fresco" >
+                            <div class="card-body">
+                                <h5 class="card-title">Entradas</h5>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="FotosBootstrap/Bitoque.jpg" class="card-img-top" alt="Bife de carne em um prato con batatas em rodelas e arroz">
+                            <div class="card-body">
+                                <h5 class="card-title">Principal</h5>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col">
+                                <div class="card h-100">
+                                <img src="FotosBootstrap/mangosticky4.jpg" class="card-img-top" alt="Arroz de manga e coco tailandes">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Sobremesas</h5>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                
+                <h2 class="display-5 fw-bold text-center">Descobre tudo o que temos para ti</h2>
+            
+                <div class="container"> 
+                    <div class="row align-items-center">
+
+                        <!-- Columna izquierda: cards -->
+                        <div class="col-md-6">
+                            <a href="receitas.html" style="display: block; text-decoration: none; color: inherit;">
+                                <div class="card mb-4 shadow-sm border-0">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="FotosBootstrap/iconchef.png" alt="Ícone" style="width: 40px; height: 40px;" class="me-3">
+                                        <div>
+                                            <h6 class="card-subtitle mb-1 text-muted">Receitas</h6>
+                                            <p class="card-text mb-0 fw-semibold">Mais de 20 receitas de todas partes do mundo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="dicas.html" style="display: block; text-decoration: none; color: inherit;">
+                                <div class="card mb-4 shadow-sm border-0">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="FotosBootstrap/iconrobot.png" alt="Ícone" style="width: 40px; height: 40px;" class="me-3">
+                                        <div>
+                                            <h6 class="card-subtitle mb-1 text-muted">Dicas</h6>
+                                            <p class="card-text mb-0 fw-semibold">Aprende os melhores tips. Poupa horas e dinheiro</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="galeria.html" style="display: block; text-decoration: none; color: inherit;">
+
+                                <div class="card mb-4 shadow-sm border-0">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="FotosBootstrap/Iconfarinha.png" alt="Ícone" style="width: 40px; height: 40px;" class="me-3">
+                                        <div>
+                                            <h6 class="card-subtitle mb-1 text-muted">Galeria de Sabores</h6>
+                                            <p class="card-text mb-0 fw-semibold">Visite e apaixone-se à primeira vista</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- Columna derecha: imagen -->
+                        <div class="col-md-6 text-center">
+                            <img src="FotosBootstrap/maobrownies.png" class="img-fluid rounded" alt="mão com brownies">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5 text-center">
+                <div class="container">
+                    <h2 class="display-5 fw-bold">Por que escolher uma receita vegana?</h2>
+                </div>
+            </section>
+
+            <div class="mx-auto my-4" style="max-width: 1000px;">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="FotosBootstrap/carousel1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="FotosBootstrap/carousel2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="FotosBootstrap/carousel3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <section class=" py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5">O que dizem sobre as nossas receitas</h2>
+                    <div class="row text-center">
+                        <!-- Testemunho 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm p-3">
+                            <img src="FotosBootstrap/abuelita.jpg" class="rounded-circle mx-auto d-block mb-3 img-testemunho" alt="Ana Oliveira">
+                            <div class="card-body">
+                                <p class="card-text">"As receitas são fáceis de seguir e deliciosas! Agora cozinho com muito mais confiança!"</p>
+                                <h6 class="mt-3 mb-0">Ana Oliveira</h6>
+                                <small class="text-muted">Avo da Keyla</small>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm p-3">
+                            <img src="FotosBootstrap/terry.jpg" class="rounded-circle mx-auto d-block mb-3 img-testemunho" alt="Carlos pereira">
+                            <div class="card-body">
+                                <p class="card-text">"Cozinhar esta receita foi um sucesso total, a família adorou e já quer repetir!"</p>
+                                <h6 class="mt-3 mb-0">Carlos Pereira</h6>
+                                <small class="text-muted">Irmão do Leone</small>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm p-3">
+                                <img src="FotosBootstrap/mochi.jpg" class="rounded-circle mx-auto d-block mb-3 img-testemunho" alt="Gatinha Mochi">
+                                <div class="card-body">
+                                    <p class="card-text">"O sabor desta receita superou todas as minhas expectativas. Simplesmente delicioso!"</p>
+                                    <h6 class="mt-3 mb-0">Mochi</h6>
+                                    <small class="text-muted">Gata de Keyla (robou um bife da cozinha)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+
+            <footer class="page-footer font-small p-5">
+                <div class="text-center">
+                    <h3 class="footer">Gastrobyte</h3>
+                    <div class="icones">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook me-3" style="font-size: 30px; color: #3b5998;"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram me-3" style="font-size: 30px; color: #833AB4;"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok" style="font-size: 30px; color: black;"></i></a>
+                    </div>
+                </div>
+            </footer>
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            
+            <script src="script.js"></script> 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+
+
+        
+    </body>
+</html>

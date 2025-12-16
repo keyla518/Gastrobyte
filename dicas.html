@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styleReceitaseDicas.css">
+        <title>Gastrobyte</title>
+        <link rel="shortcut icon" href="FotosBootstrap/frigideira.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="FotosBootstrap/logo.svg" alt="Gastrobyte" width="90" height="80">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ms-auto align-items-center gap-5">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="receitas.html"> Receitas </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="dicas.html">Dicas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="about.html">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <a class="navbar-brand" href="#" aria-label="Pesquiçar">
+                                <img src="FotosBootstrap/Iconlupasvg.svg" alt="lupa de pesquisa" width="30" height="40">
+                            </a>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </nav>
+        
+        <section class="py-5 text-center">
+                <div class="container">
+                    <h2 class="display-5 fw-bold">Dicas</h2>
+                    <p>Descubra truques e dicas de cozinha para facilitar a sua vida e transformar-se num masterchef.</p>
+                </div>
+        </section>
+
+        <div class="container my-5">
+            
+
+            <div class="row g-4">
+
+                <!-- Imagen 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/utensilios.jpg" class="card-img-top img-ajustada" alt="Utensílios" data-bs-toggle="modal" data-bs-target="#modalUtensilios" >
+                        <div class="card-body">
+                            <p class="card-text">Utensílios de cozinha essenciais para iniciantes: guia prático para começares com o pé direito.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/limão.jpg" class="card-img-top img-ajustada" alt="Limão" data-bs-toggle="modal" data-bs-target="#modalLimao" >
+                        <div class="card-body">
+                            <p class="card-text">Nem todos os heróis usam capas: limão, um aliado na sua cozinha.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/sal.jpg" class="card-img-top img-ajustada" alt="Sal" data-bs-toggle="modal" data-bs-target="#modalSal" >
+                        <div class="card-body">
+                            <p class="card-text">Salgaste demasiado a comida? 5 truques simples para salvar o prato.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modales -->
+        <!-- Modal Utensilios -->
+        <div class="modal fade" id="modalUtensilios" tabindex="-1" aria-labelledby="modalUtensiliosLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalUtensiliosLabel">Utensílios de Cozinha</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/utensilios.jpg" class="img-fluid" alt="Utensílios" />
+                        <p class="mt-3">Ter os utensílios certos facilita o trabalho na cozinha e melhora a experiência culinária. Entre os essenciais estão uma boa faca de chef, que permite cortar com precisão; tábuas de corte para proteger as superfícies; panelas e frigideiras de qualidade para diferentes tipos de cozinhados; colheres de pau e espátulas para mexer e virar alimentos; e medidores para garantir as quantidades corretas. Outros utensílios úteis incluem raladores, peneiras e batedores. Investir em ferramentas básicas e duráveis faz toda a diferença no dia a dia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Limão -->
+        <div class="modal fade" id="modalLimao" tabindex="-1" aria-labelledby="modalLimaoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLimaoLabel">Limão</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/limão.jpg" class="img-fluid" alt="Limão" />
+                        <p class="mt-3">O limão é um ingrediente versátil que adiciona frescura e acidez a muitos pratos. Pode ser usado para temperar saladas, realçar o sabor de peixes e mariscos, e em marinadas para amaciar carnes. O sumo de limão é ótimo para evitar a oxidação de frutas como maçãs e abacates, mantendo-as frescas por mais tempo. Além disso, a raspa da casca é utilizada para dar aroma em sobremesas, bolos e molhos. O limão também é comum em bebidas, como limonadas e cocktails, conferindo um toque cítrico refrescante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sal -->
+        <div class="modal fade" id="modalSal" tabindex="-1" aria-labelledby="modalSalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSalLabel">Sal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/sal.jpg" class="img-fluid" alt="Sal" />
+                        <p class="mt-3">Se a comida ficou demasiado salgada, existem algumas soluções para equilibrar o sabor. Uma opção é adicionar ingredientes que absorvam o sal, como batatas cruas descascadas, que depois podem ser retiradas. Também podes acrescentar líquidos como água, caldo sem sal, leite ou creme para diluir o sabor salgado. Adicionar um pouco de açúcar ou ácido, como sumo de limão ou vinagre, pode ajudar a disfarçar o excesso de sal. Outra alternativa é aumentar a quantidade dos outros ingredientes para diluir o sal. É importante provar e ajustar aos poucos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            
+        <div class="container my-5">
+            <div class="row g-4">
+
+                <!-- Imagen ingredientes -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/ingredientes.jpg" class="card-img-top img-ajustada" alt="Ingredientes" data-bs-toggle="modal" data-bs-target="#modalIngredientes" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Como substituir ingredientes comuns na cozinha.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen vegetais -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/imagemvegetais.jpg" class="card-img-top img-ajustada" alt="Vegetais" data-bs-toggle="modal" data-bs-target="#modalVegetais" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Como manter frutas e legumes frescos durante mais tempo: dicas simples para evitar o desperdício</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen frigideiras -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/frigideiras.jpg" class="card-img-top img-ajustada" alt="Frigideiras" data-bs-toggle="modal" data-bs-target="#modalFrigideiras" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Como escolher a frigideira ideal: guia pratico para cozinheiros de todos os niveis</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modales -->
+
+        <!-- Modal Ingredientes -->
+        <div class="modal fade" id="modalIngredientes" tabindex="-1" aria-labelledby="modalIngredientesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalIngredientesLabel">Substituir Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="FotosBootstrap/ingredientes.jpg" class="img-fluid" alt="Ingredientes" />
+                    <p class="mt-3">Substituir ingredientes pode ser útil quando falta algum item ou para adaptar receitas a dietas específicas. Por exemplo, o iogurte natural pode substituir o creme de leite em molhos e sobremesas. O azeite pode ser usado em vez da manteiga para uma opção mais saudável. Para substituir ovos, pode-se usar puré de banana ou sementes de linhaça hidratadas em receitas de bolos. O açúcar pode ser trocado por mel ou açúcar mascavado. É importante ajustar as quantidades e considerar o sabor para manter o equilíbrio da receita.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Vegetais -->
+            <div class="modal fade" id="modalVegetais" tabindex="-1" aria-labelledby="modalVegetaisLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVegetaisLabel">Frutas e Legumes Frescos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="FotosBootstrap/imagemvegetais.jpg" class="img-fluid" alt="Vegetais" />
+                    <p class="mt-3">Para conservar frutas e vegetais frescos por mais tempo, é importante armazená-los corretamente. Guarde as frutas que amadurecem após a colheita, como bananas e abacates, à temperatura ambiente até amadurecerem, e depois no frigorífico. Vegetais de folhas devem ser lavados, secos e guardados em sacos ou recipientes herméticos no frigorífico. Evite juntar frutas e vegetais que libertem gás etileno, como maçãs e tomates, com os mais sensíveis, para evitar o amadurecimento precoce. Também é importante não lavar todos os vegetais antes de os guardar, pois a humidade pode acelerar a deterioração.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Frigideiras -->
+        <div class="modal fade" id="modalFrigideiras" tabindex="-1" aria-labelledby="modalFrigideirasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalFrigideirasLabel">Escolher Frigideira</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="FotosBootstrap/frigideiras.jpg" class="img-fluid" alt="Frigideiras" />
+                <p class="mt-3">Para escolher a frigideira ideal, considere o tipo de cozinhado que vai fazer. Frigideiras de aço inox são duráveis e ótimas para selar carnes. As de alumínio são leves e distribuem o calor rapidamente, ideais para fritar. As frigideiras antiaderentes facilitam a limpeza e são perfeitas para ovos e alimentos delicados. Para cozinhados em alta temperatura, escolha frigideiras de ferro fundido, que mantêm o calor por mais tempo. Verifique também o tamanho e o cabo, garantindo conforto e segurança durante o uso.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="container my-5">
+            <div class="row g-4">
+
+                <!-- Imagen cebolas -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/cebolas.jpg" class="card-img-top img-ajustada" alt="Cebolas" data-bs-toggle="modal" data-bs-target="#modalCebolas" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Como caramelizar as cebolas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen tomates -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/tomates.jpg" class="card-img-top img-ajustada" alt="Tomates" data-bs-toggle="modal" data-bs-target="#modalTomates" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Os tomates recomendados a cada receita</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen facas -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/facas.jpg" class="card-img-top img-ajustada" alt="Facas" data-bs-toggle="modal" data-bs-target="#modalFacas" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Cuidados com a faca na hora de cortar</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modales -->
+
+        <!-- Modal Cebolas -->
+        <div class="modal fade" id="modalCebolas" tabindex="-1" aria-labelledby="modalCebolasLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCebolasLabel">Caramelizar Cebolas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/cebolas.jpg" class="img-fluid" alt="Cebolas" />
+                        <p class="mt-3">Para caramelizar cebola, corte as cebolas em fatias finas e aqueça azeite ou manteiga numa frigideira em lume médio-baixo. Adicione as cebolas e cozinhe lentamente, mexendo ocasionalmente para não queimarem. O processo dura entre 30 a 45 minutos, até as cebolas ficarem macias e de cor castanha escura. Se necessário, acrescente um pouco de água para evitar que agarrem. No final, tempere com sal e pimenta. As cebolas caramelizadas são ideais para acompanhar vários pratos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Tomates -->
+        <div class="modal fade" id="modalTomates" tabindex="-1" aria-labelledby="modalTomatesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTomatesLabel">Tomates Recomendados</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/tomates.jpg" class="img-fluid" alt="Tomates" />
+                        <p class="mt-3">Para escolher o tomate ideal, é importante considerar o tipo de receita. Os tomates cherry são pequenos, doces e ideais para saladas e pratos frescos. Os tomates pera têm menos água e são perfeitos para molhos e conservas. Já os tomates-coração-de-boi são grandes, carnudos e recomendados para saladas e pratos onde se deseja textura. Os tomates maduros e firmes funcionam bem para grelhar ou assar. Por fim, escolha sempre tomates maduros, com boa cor e sem manchas para garantir sabor e qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Facas -->
+        <div class="modal fade" id="modalFacas" tabindex="-1" aria-labelledby="modalFacasLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFacasLabel">Cuidados com a Faca</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/facas.jpg" class="img-fluid" alt="Facas" />
+                        <p class="mt-3">Ao usar facas, é fundamental ter atenção para garantir segurança e prolongar a vida útil da lâmina. Sempre corte sobre uma tábua adequada, evitando superfícies duras que danifiquem a faca. Mantenha as facas afiadas, pois lâminas cegas exigem mais força e aumentam o risco de acidentes. Segure a faca com firmeza e corte afastando os dedos da lâmina. Nunca tente apanhar uma faca que esteja a cair. Após o uso, lave as facas com cuidado, secando-as imediatamente para evitar ferrugem. Guarde-as em suportes próprios ou em bainhas para evitar acidentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+                <footer class="page-footer font-small p-5">
+            <div class="text-center">
+                <h3 class="footer">Gastrobyte</h3>
+                <div class="icones">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook me-3" style="font-size: 30px; color: #3b5998;"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram me-3" style="font-size: 30px; color: #833AB4;"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok" style="font-size: 30px; color: black;"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script src="script.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+
+    </body>
+</html>

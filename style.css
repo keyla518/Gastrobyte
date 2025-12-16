@@ -1,0 +1,812 @@
+/* ========================================
+   CONFIGURAÇÕES GLOBAIS
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0e7d5;
+  font-family: 'Inter', 'Work Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+#mainNavbar {
+  padding: 0.5rem 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background-color: transparent !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.scrolled {
+  background-color: rgba(222, 184, 135, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0 100px;
+}
+
+.navbar.scrolled .navbar-brand img {
+  height: 60px;
+  transition: height 0.3s ease;
+}
+
+.navbar-brand img {
+  transition: height 0.3s ease;
+}
+
+.nav-link {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease !important;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ff6600;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: #ff6600 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+  min-height: 70vh;
+  padding: 2rem 0;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.lead {
+  text-align: left;
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.boton-shadow {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.boton-shadow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 102, 0, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.boton-shadow:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.boton-shadow:hover {
+  box-shadow: 5px 5px 0 rgba(101, 67, 33, 1);
+  transform: translate(-2px, -2px);
+}
+
+.boton-shadow:active {
+  transform: translate(0, 0);
+  box-shadow: 2px 2px 0 rgba(101, 67, 33, 1);
+}
+
+/* ========================================
+   CARDS
+======================================== */
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.card-link:hover {
+  opacity: 0.9;
+}
+
+/* ========================================
+   TESTEMUNHOS
+======================================== */
+
+.img-testemunho {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 4px solid #f0e7d5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img-testemunho {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* ========================================
+   CAROUSEL
+======================================== */
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* ========================================
+   SEÇÕES
+======================================== */
+
+section {
+  padding: 3rem 0;
+}
+
+section h2 {
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+
+
+/* ========================================
+   ANIMAÇÕES
+======================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container.my-5 {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 576px) {
+  section.py-5.text-center p {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+  }
+
+  .modal-body p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* ========================================
+   GALERIA DE SABORES
+======================================== */
+
+.gallery {
+  column-count: 4;
+  column-gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Overlay escuro ao hover */
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+
+.gallery-item:hover::before {
+  opacity: 1;
+}
+
+.gallery-item:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  object-fit: cover;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Animação de entrada */
+.gallery-item {
+  animation: fadeInScale 0.6s ease-out backwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Delay escalonado para efeito cascata */
+.gallery-item:nth-child(1) { animation-delay: 0.05s; }
+.gallery-item:nth-child(2) { animation-delay: 0.1s; }
+.gallery-item:nth-child(3) { animation-delay: 0.15s; }
+.gallery-item:nth-child(4) { animation-delay: 0.2s; }
+.gallery-item:nth-child(5) { animation-delay: 0.25s; }
+.gallery-item:nth-child(6) { animation-delay: 0.3s; }
+.gallery-item:nth-child(7) { animation-delay: 0.35s; }
+.gallery-item:nth-child(8) { animation-delay: 0.4s; }
+.gallery-item:nth-child(9) { animation-delay: 0.45s; }
+.gallery-item:nth-child(10) { animation-delay: 0.5s; }
+.gallery-item:nth-child(11) { animation-delay: 0.55s; }
+.gallery-item:nth-child(12) { animation-delay: 0.6s; }
+.gallery-item:nth-child(13) { animation-delay: 0.65s; }
+.gallery-item:nth-child(14) { animation-delay: 0.7s; }
+.gallery-item:nth-child(15) { animation-delay: 0.75s; }
+.gallery-item:nth-child(16) { animation-delay: 0.8s; }
+.gallery-item:nth-child(17) { animation-delay: 0.85s; }
+.gallery-item:nth-child(18) { animation-delay: 0.9s; }
+.gallery-item:nth-child(19) { animation-delay: 0.95s; }
+.gallery-item:nth-child(20) { animation-delay: 1s; }
+
+/* ========================================
+   MODAL
+======================================== */
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.modal-body {
+  padding: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.modal-body img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* ========================================
+   TÍTULO DA GALERIA
+======================================== */
+
+.container.py-5.text-center h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem !important;
+}
+
+.container.py-5.text-center h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6600, #ff9944);
+  border-radius: 2px;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+
+@media (max-width: 576px) {
+  .gallery {
+    column-count: 1;
+    column-gap: 0;
+    padding: 0.5rem;
+  }
+  
+  .gallery-item {
+    margin-bottom: 1rem;
+  }
+  
+  .gallery-item::after {
+    font-size: 2rem;
+  }
+  
+  .container.py-5.text-center h2 {
+    font-size: 2rem;
+  }
+  
+  .modal-body img {
+    max-height: 60vh;
+  }
+  
+  .modal .btn-close {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+
+/* ========================================
+   PÁGINA DE CONTACTOS
+======================================== */
+
+#form-contacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("FotosBootstrap/telefone.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+#form-contacto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+}
+
+#form-contacto .container {
+  position: relative;
+  z-index: 1;
+}
+
+#form-contacto h2 {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: rem;
+}
+
+#form-contacto > section p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  font-size: 1.15rem;
+}
+
+/* Container do formulário */
+.container-personalizada {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.container-personalizada h5 {
+  color: black;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  font-size: 1.15rem;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.75rem;
+}
+
+/* Radio buttons e checkboxes */
+.form-check {
+  margin-bottom: 0.75rem;
+  padding-left: 2rem;
+}
+
+.form-check-input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.15rem;
+  border: 2px solid #ccc;
+  transition: var(--transition-fast);
+}
+
+.form-check-input:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.form-check-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.25);
+}
+
+.form-check-label {
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Dropdown */
+.d-flex.align-items-center.mb-3 {
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.d-flex.align-items-center.mb-3 p {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.dropdown-toggle {
+  background-color: white !important;
+  color: var(--text-dark) !important;
+  border: 2px solid #dee2e6 !important;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: var(--transition-fast);
+  border-radius: 8px;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.15);
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  transition: var(--transition-fast);
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 102, 0, 0.1);
+  color: var(--accent-color);
+}
+
+/* Inputs do formulário */
+.form-control {
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition: var(--transition-fast);
+  font-size: 1rem;
+  background-color: white;
+}
+
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.15);
+  background-color: white;
+}
+
+.form-control::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+/* Textarea */
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Botão enviar */
+.boton-shadow {
+  width: 100%;
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-color), #ff8833);
+  border: none;
+  color: white;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.boton-shadow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 102, 0, 0.4);
+  background: linear-gradient(135deg, #ff8833, var(--accent-color));
+}
+
+.boton-shadow:active {
+  transform: translateY(0);
+}
+
+/* Toast de sucesso */
+.toast {
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de informações de contacto */
+#info-contacto {
+  padding: 4rem 0;
+  background: white;
+}
+
+#info-contacto h2 {
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+#info-contacto .col-md-4 {
+  background: rgba(240, 231, 213, 0.3);
+  border-radius: 16px;
+  transition: var(--transition-fast);
+  border: 2px solid transparent;
+}
+
+#info-contacto .col-md-4:hover {
+  background: rgba(240, 231, 213, 0.5);
+  border-color: rgba(255, 102, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#info-contacto strong {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+#info-contacto a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  font-weight: 600;
+}
+
+#info-contacto a:hover {
+  text-decoration: underline;
+  color: #ff8833;
+}
+
+#info-contacto ul {
+  line-height: 2;
+}
+
+/* Mapa */
+#mapa-localizacao {
+  margin-bottom: 0;
+}
+
+#mapa-localizacao iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Transições */
+.transition-circle {
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+  margin-top: -1px;
+  position: relative;
+  z-index: 10;
+}
+
+.section2 {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.img-fija {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ========================================
+   RESPONSIVIDADE - CONTACTOS
+======================================== */
+
+@media (max-width: 576px) {
+  .container-personalizada {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .boton-shadow {
+    font-size: 1rem;
+  }
+
+  #form-contacto h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+  background: linear-gradient(135deg, #654321 0%, #8b6332 100%);
+  color: #fff;
+  margin-top: 3rem;
+  border-radius: 12px 12px 0 0;
+}
+
+footer h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.icones a {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.icones a:hover {
+  transform: translateY(-5px) scale(1.2);
+}

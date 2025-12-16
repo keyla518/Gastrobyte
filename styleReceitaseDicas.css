@@ -1,0 +1,318 @@
+/* ========================================
+   CONFIGURAÇÕES GLOBAIS
+======================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: #f0e7d5;
+  --accent-color: #ff6600;
+  --navbar-scroll: rgba(222, 184, 135, 0.95);
+  --text-dark: #2c2c2c;
+  --text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.3s ease;
+}
+
+body {
+  background-color: var(--primary-bg);
+  font-family: 'Inter', 'Work Sans', sans-serif;
+  overflow-x: hidden;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+#mainNavbar {
+  padding: 0.5rem 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background-color: transparent !important;
+  transition: var(--transition-smooth);
+}
+
+.navbar.scrolled {
+  background-color: var(--navbar-scroll) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 100px;
+}
+
+.navbar-brand img {
+  transition: var(--transition-fast);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar.scrolled .navbar-brand img {
+  height: 60px;
+}
+
+.nav-link {
+  text-shadow: var(--text-shadow);
+  transition: var(--transition-fast) !important;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  font-weight: 600;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), #ff8833);
+  transition: var(--transition-fast);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link:active {
+  transform: translateY(0);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Toggler melhorado */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+  transition: var(--transition-fast);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.25);
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.05);
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+section.py-5.text-center {
+  background: linear-gradient(135deg, rgba(222, 184, 135, 0.3) 0%, rgba(240, 231, 213, 0.5) 100%);
+  padding: 4rem 0 !important;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+section.py-5.text-center::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 102, 0, 0.3), transparent);
+}
+
+section.py-5.text-center h2 {
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  text-shadow: var(--text-shadow);
+  font-weight: 700;
+}
+
+section.py-5.text-center p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   CARDS DE RECEITAS
+======================================== */
+.card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  transition: var(--transition-smooth);
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.img-ajustada {
+  height: 250px;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+  background: white;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.card:hover .card-text {
+  color: var(--accent-color);
+}
+
+/* Grid responsivo */
+.row.g-4 {
+  margin-bottom: 3rem;
+}
+
+/* ========================================
+   MODAIS
+======================================== */
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, var(--navbar-scroll), rgba(222, 184, 135, 0.7));
+  border-bottom: 2px solid rgba(255, 102, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 2rem;
+  background: white;
+}
+
+.modal-body img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.modal-body p {
+  line-height: 1.8;
+  color: #444;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.btn-close {
+  transition: var(--transition-fast);
+}
+
+.btn-close:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+/* Backdrop melhorado */
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+  background: linear-gradient(135deg, #654321 0%, #8b6332 100%);
+  color: #fff;
+  margin-top: 3rem;
+  border-radius: 12px 12px 0 0;
+}
+
+footer h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.icones a {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.icones a:hover {
+  transform: translateY(-5px) scale(1.2);
+}
+
+
+
+/* ========================================
+   ANIMAÇÕES
+======================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container.my-5 {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 576px) {
+  section.py-5.text-center p {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+  }
+
+  .modal-body p {
+    font-size: 1rem;
+  }
+}

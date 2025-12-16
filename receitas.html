@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styleReceitaseDicas.css">
+        <title>Gastrobyte</title>
+        <link rel="shortcut icon" href="FotosBootstrap/frigideira.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="FotosBootstrap/logo.svg" alt="Gastrobyte" width="90" height="80">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ms-auto align-items-center gap-5">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="receitas.html"> Receitas </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="dicas.html">Dicas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="about.html">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-semibold text-dark" href="contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <a class="navbar-brand" href="#" aria-label="Pesquiçar">
+                                <img src="FotosBootstrap/Iconlupasvg.svg" alt="lupa de pesquisa" width="30" height="40">
+                            </a>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </nav>
+
+        <section class="py-5 text-center">
+                <div class="container">
+                    <h2 class="display-5 fw-bold"> Receitas</h2>
+                    <p>Poupe tempo e dinheiro. Estas receitas estão testadas por profissionais</p>
+                </div>
+        </section>
+
+
+        <div class="container my-5">
+            <div class="row g-4">
+
+                <!-- Imagem bolo de ananás -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/boloananas1.jpg" class="card-img-top img-ajustada" alt="Bolo de Ananás" data-bs-toggle="modal" data-bs-target="#modalBoloAnanas" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Receita de bolo de ananás</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagem arroz com manga tailandês -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/mangosticky2.jpg" class="card-img-top img-ajustada" alt="Arroz com Manga" data-bs-toggle="modal" data-bs-target="#modalArrozManga" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Receita de arroz com manga tailandês</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagem cheesecake Oreo -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/cheesecakeoreo7.jpg" class="card-img-top img-ajustada" alt="Cheesecake Oreo" data-bs-toggle="modal" data-bs-target="#modalCheesecakeOreo" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Receita de cheesecake de Oreo</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modais -->
+
+        <!-- Modal Bolo de Ananás -->
+        <div class="modal fade" id="modalBoloAnanas" tabindex="-1" aria-labelledby="modalBoloAnanasLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBoloAnanasLabel">Receita de Bolo de Ananás</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/boloananas1.jpg" class="img-fluid" alt="Bolo de Ananás" />
+                        <p class="mt-3">Para fazer bolo de ananás, pré-aqueça o forno a 180ºC. Bata 3 ovos com 200 g de açúcar até ficar fofo, adicione 100 ml de óleo vegetal e o sumo de uma lata de ananás com pedaços, misturando bem. Junte 200 g de farinha e uma colher de chá de fermento em pó peneirados e envolva delicadamente. Por fim, acrescente os pedaços de ananás e mexa. Verta a massa numa forma untada e leve ao forno por 35 a 40 minutos até estar dourado e firme. Deixe arrefecer antes de desenformar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Arroz com Manga -->
+        <div class="modal fade" id="modalArrozManga" tabindex="-1" aria-labelledby="modalArrozMangaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalArrozMangaLabel">Receita de Arroz com Manga Tailandês</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/mangosticky2.jpg" class="img-fluid" alt="Arroz com Manga" />
+                        <p class="mt-3">Para fazer arroz de manga tailandês, coza 200 g de arroz glutinoso em água até ficar macio e escorra. Numa panela, aqueça 400 ml de leite de coco com 100 g de açúcar e uma pitada de sal até dissolver. Misture o arroz cozido no leite de coco e deixe repousar por 20 minutos para absorver o sabor. Sirva o arroz com manga fresca cortada em fatias, regando com mais leite de coco por cima e polvilhe com sementes de sésamo torradas para decorar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cheesecake Oreo -->
+        <div class="modal fade" id="modalCheesecakeOreo" tabindex="-1" aria-labelledby="modalCheesecakeOreoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCheesecakeOreoLabel">Receita de Cheesecake de Oreo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/cheesecakeoreo7.jpg" class="img-fluid" alt="Cheesecake Oreo" />
+                        <p class="mt-3">Para fazer cheesecake de Oreo, triture 200 g de bolachas Oreo até ficarem em pedaços pequenos e misture com 100 g de manteiga derretida. Pressione essa mistura no fundo de uma forma de aro removível e leve ao frigorífico para firmar. Bata 400 g de queijo creme com 200 g de açúcar até ficar cremoso, adicione 200 ml de natas para bater e continue a bater até obter um creme liso. Incorpore cerca de 100 g de bolachas Oreo partidas em pedaços e verta o creme sobre a base. Leve ao frigorífico por pelo menos 4 horas ou até firmar. Sirva fresco.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/caldoverde1.jpg" class="card-img-top img-ajustada" alt="Caldo verde" data-bs-toggle="modal" data-bs-target="#modalCaldoVerde" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Receita de caldo verde</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/lasanha1.jpg" class="card-img-top img-ajustada" alt="lasanha" data-bs-toggle="modal" data-bs-target="#modalLasanha" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Receita de lasanha</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="FotosBootstrap/ratatouille.jpg" class="card-img-top img-ajustada" alt="ratatouille" data-bs-toggle="modal" data-bs-target="#modalRatatouille" style="cursor:pointer;">
+                        <div class="card-body">
+                            <p class="card-text">Receita de ratatouille</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modais -->
+
+        <!-- Modal Caldo Verde -->
+        <div class="modal fade" id="modalCaldoVerde" tabindex="-1" aria-labelledby="modalCaldoVerdeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCaldoVerdeLabel">Receita de Caldo Verde</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="FotosBootstrap/caldoverde1.jpg" class="img-fluid" alt="Caldo Verde" />
+                        <p class="mt-3">Para fazer caldo verde, leve ao lume 1 litro de água com 4 batatas descascadas e cortadas em pedaços, 1 cebola picada e 2 dentes de alho esmagados até as batatas ficarem macias. Triture as batatas com o caldo até obter um creme homogéneo. Volte a aquecer, junte 150 g de couve galega cortada em tiras finas e 100 g de chouriço em rodelas. Cozinhe por mais 10 minutos, tempere com sal e pimenta a gosto e sirva quente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Modal Lasanha -->
+            <div class="modal fade" id="modalLasanha" tabindex="-1" aria-labelledby="modalLasanhaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLasanhaLabel">Receita de Lasanha</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="FotosBootstrap/lasanha1.jpg" class="img-fluid" alt="Lasanha" />
+                            <p class="mt-3">Para fazer lasanha, comece por preparar um molho de carne refogando 500 g de carne picada com cebola e alho picados, adicione polpa de tomate e deixe cozinhar por 20 minutos. Prepare um molho béchamel com manteiga, farinha e leite, temperando com sal, pimenta e noz-moscada. Num tabuleiro, coloque uma camada de molho de carne, seguida por placas de massa para lasanha, depois molho béchamel e queijo ralado. Repita as camadas até acabar os ingredientes, terminando com béchamel e queijo. Leve ao forno a 180ºC por cerca de 40 minutos até dourar. Deixe repousar antes de servir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Ratatouille -->
+            <div class="modal fade" id="modalRatatouille" tabindex="-1" aria-labelledby="modalRatatouilleLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalRatatouilleLabel">Receita de Ratatouille</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="FotosBootstrap/ratatouille.jpg" class="img-fluid" alt="Ratatouille" />
+                            <p class="mt-3">Para fazer ratatouille, corte 1 beringela, 1 courgette, 1 pimento vermelho e 2 tomates em rodelas finas. Num tacho, refogue 1 cebola picada e 2 dentes de alho em azeite até ficarem macios. Adicione os legumes em camadas alternadas, tempere com sal, pimenta, tomilho e orégãos. Regue com um fio de azeite e cubra. Cozinhe em lume brando durante cerca de 40 minutos até os legumes estarem tenros. Sirva quente ou à temperatura ambiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <footer class="page-footer font-small p-5">
+            <div class="text-center">
+                <h3 class="footer">Gastrobyte</h3>
+                <div class="icones">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook me-3" style="font-size: 30px; color: #3b5998;"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram me-3" style="font-size: 30px; color: #833AB4;"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok" style="font-size: 30px; color: black;"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script src="script.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+
+    </body>
+</html>
